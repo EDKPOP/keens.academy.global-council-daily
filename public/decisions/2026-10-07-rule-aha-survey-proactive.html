@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>REV-021 아하모먼트 설문 계획</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+:root{--ground:#f4f6f4;--surface:#ffffff;--ink:#15201e;--ink-2:#45524f;--muted:#7a8683;--line:#d9dfdc;--accent:#0f6b5f;--accent-soft:#e3f1ee;--chip:#eef2f0;
+  --serif:"Gowun Batang",ui-serif,Georgia,serif;--sans:"IBM Plex Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ground:#0f1413;--surface:#171d1b;--ink:#eef2ef;--ink-2:#c3ccc8;--muted:#8a9693;--line:#2b3431;--accent:#4fbfae;--accent-soft:#163430;--chip:#1f2725}}
+:root[data-theme="dark"]{--ground:#0f1413;--surface:#171d1b;--ink:#eef2ef;--ink-2:#c3ccc8;--muted:#8a9693;--line:#2b3431;--accent:#4fbfae;--accent-soft:#163430;--chip:#1f2725}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.65;padding-block:36px 90px;padding-inline:20px}
+.page{max-width:760px;margin:0 auto}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-family:var(--serif);font-weight:700;font-size:28px;line-height:1.3;margin:8px 0 10px;text-wrap:balance}
+.lede{color:var(--ink-2);max-width:66ch;margin:0 0 20px}
+.rules{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:14.5px}
+.rules ul{margin:0;padding-left:18px}.rules li{margin:4px 0}
+h2{font-family:var(--serif);font-size:20px;margin:40px 0 6px;text-wrap:balance}
+.when{color:var(--ink-2);font-size:14px;margin:0 0 10px}
+.q{background:var(--surface);border-left:4px solid var(--accent);border-radius:0 8px 8px 0;padding:12px 16px;margin:10px 0 12px}
+.q .en{font-style:italic;font-size:16px}.q .ko{display:block;color:var(--ink-2);font-size:14px;margin-top:3px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.chip{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13.5px;line-height:1.35}
+.chip small{display:block;color:var(--muted);font-size:12px}
+.chip.none{border-style:dashed}.chip.other{background:transparent}
+.tablewrap{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}
+th,td{text-align:left;vertical-align:top;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--ink-2);font-weight:600;background:var(--surface)}
+.follow{font-size:13.5px;color:var(--ink-2);margin:6px 0 0}.follow b{color:var(--ink)}
+.scale{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.scale span{background:var(--accent-soft);color:var(--accent);border-radius:8px;padding:6px 12px;font-weight:600;font-size:13.5px}
+.ask{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-top:14px}
+.ask label{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px dashed var(--line);cursor:pointer}.ask label:last-child{border-bottom:0}
+.ask input{margin-top:5px;accent-color:var(--accent)}.ask input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.foot{color:var(--muted);font-size:12.5px;margin-top:36px;border-top:1px solid var(--line);padding-top:10px}
+code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;background:var(--surface);padding:1px 5px;border-radius:4px;border:1px solid var(--line)}
+@media (max-width:480px){h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="eyebrow">REV-021 · 설문 계획 · 2026-10-07</div>
+<h1>아하모먼트 설문 — 서울이가 사건 직후에 묻는 질문 8개와 선택지</h1>
+<p class="lede">학습자가 "이건 나한테 맞다"고 느끼는 순간을 찾는 설문입니다. 후보 사건 직후에 서울이가 한 문장을 묻고, 학습자는 선택지 하나를 누르거나 직접 씁니다. 답은 그 뒤 복귀 여부와 맞춰 봅니다.</p>
+
+<div class="rules"><ul>
+<li>사건 <b>직후</b>, 같은 대화 안에서 묻습니다. 하루 1문항, 한 사람에게 2주 안 최대 3회, 기존 선톡 하루 상한에 포함합니다.</li>
+<li>선택지는 <b>최대 6개 + "다른 것(직접 쓰기)"</b>. 순서는 매번 섞고, "없었다/모르겠다"를 항상 넣습니다. 선택 뒤 <b>한 줄 되묻기</b>를 한 번만 합니다.</li>
+<li>과거 사실만 묻습니다. "도움이 됐나요", "앞으로 할 건가요"는 쓰지 않습니다.</li>
+<li>19세 미만에게는 몸·외모·가족 사정을 묻는 선택지를 뺍니다. 답하지 않아도 그대로 넘어갑니다.</li>
+<li>기록: <code>aha_survey</code> 이벤트(trigger · choice · otherText · followUp · localDate). 자유 서술은 대화 원장에 그대로.</li>
+</ul></div>
+
+<h2>T1 · 첫 세션을 끝낸 직후</h2>
+<p class="when">5분 안 · 모든 신규 학습자 · 2주 예상 64명</p>
+<div class="q"><span class="en">"That was your first one. What was one thing that felt different from how you usually practice?"</span><span class="ko">첫 번째 끝냈네요. 평소 연습이랑 뭐가 하나 달랐어요?</span></div>
+<div class="chips">
+<span class="chip">I knew exactly what to do, so I just started<small>할 일이 정해져 있어서 바로 시작했다 · 구조</small></span>
+<span class="chip">I could follow the video right away<small>영상을 보고 바로 따라 할 수 있었다 · 수업 형식</small></span>
+<span class="chip">It was short enough to actually finish<small>짧아서 끝낼 수 있었다 · 분량</small></span>
+<span class="chip">Having Seoul there while I practiced<small>연습하는 동안 서울이가 옆에 있었다 · 동반</small></span>
+<span class="chip">I could see myself (camera / mirror)<small>카메라·거울로 내 몸을 봤다 · 자기 관찰</small></span>
+<span class="chip none">Honestly, not that different<small>솔직히 별로 다르지 않았다</small></span>
+<span class="chip other">Something else (type it)<small>다른 것(직접 쓰기)</small></span>
+</div>
+<p class="follow">되묻기 · <b>"What were you doing at that moment?"</b> 그 순간 뭘 하고 있었어요?</p>
+
+<h2>T2 · 첫 리플렉션에 답한 직후</h2>
+<p class="when">첫 리플렉션을 한 사람 · 2주 예상 9명</p>
+<div class="q"><span class="en">"Looking back at today — was there a moment it clicked?"</span><span class="ko">오늘을 돌아보면 '아, 이거다' 싶은 순간이 있었어요?</span></div>
+<div class="chips">
+<span class="chip">When a move finally worked<small>동작이 처음으로 됐을 때 · 작은 성공</small></span>
+<span class="chip">When I saw myself on camera<small>카메라로 내 모습을 봤을 때 · 자기 관찰</small></span>
+<span class="chip">When Seoul said something that landed<small>서울이의 말이 와닿았을 때 · 코치 관계</small></span>
+<span class="chip">When I finished everything for today<small>오늘 할 일을 다 끝냈을 때 · 완주</small></span>
+<span class="chip">When I wrote down what I noticed<small>느낀 걸 적었을 때 · 회고 자체</small></span>
+<span class="chip none">No click yet<small>아직 그런 순간은 없었다</small></span>
+<span class="chip other">Something else (type it)<small>다른 것(직접 쓰기)</small></span>
+</div>
+<p class="follow">되묻기(선택 시) · <b>"What exactly were you doing right then?"</b> 그때 정확히 뭘 하고 있었어요?</p>
+
+<h2>T3 · 트레이너 결과를 받고 첫 행동을 한 직후</h2>
+<p class="when">결과를 받은 사람 · 2주 예상 30명</p>
+<div class="q"><span class="en">"You got your trainer's note and then came back. What in that note changed how you'll practice?"</span><span class="ko">노트 받고 다시 왔네요. 노트의 어떤 부분이 연습 방식을 바꿨어요?</span></div>
+<div class="chips">
+<span class="chip">The score / level<small>점수·레벨 · 평가</small></span>
+<span class="chip">The one strength they pointed out<small>짚어 준 강점 한 가지 · 인정</small></span>
+<span class="chip">The specific thing to fix<small>고칠 점을 콕 집어 준 것 · 구체 지적</small></span>
+<span class="chip">The next lesson they recommended<small>추천한 다음 수업 · 경로</small></span>
+<span class="chip">Just knowing a real trainer watched me<small>진짜 트레이너가 봤다는 사실 자체 · 사람의 시선</small></span>
+<span class="chip none">Nothing changed, I was coming back anyway<small>바뀐 건 없다, 어차피 올 생각이었다</small></span>
+<span class="chip other">Something else (type it)<small>다른 것(직접 쓰기)</small></span>
+</div>
+
+<h2>T4 · 훈련 3일 설문(기존 D3 카드)에 1문항 추가</h2>
+<p class="when">가입 1~3주 · 2주 예상 18명</p>
+<div class="q"><span class="en">"Think back over these 3 days. Was there a moment you thought 'this is for me'?"</span><span class="ko">지난 사흘을 돌아보면 '이건 나한테 맞다' 싶은 순간이 있었어요?</span></div>
+<p class="follow">선택지는 T2와 같은 7개. "No click yet" 대신 <b>"Not yet"</b>. 선택 시 되묻기 1회 · <b>"What was happening right then?"</b> 그때 무슨 일이 있었어요?</p>
+
+<h2>T5 · 훈련일 4회 이상 지난 활성 학습자 · 1인 1회</h2>
+<p class="when">활성화된 사람만 · 예상 약 40명</p>
+<div class="q"><span class="en">"Quick one. If you couldn't train with me anymore, how would you feel?"</span><span class="ko">하나만요. 저랑 더 훈련 못 하게 되면 어떨 것 같아요?</span></div>
+<div class="scale"><span>Very disappointed · 많이 아쉽다</span><span>Somewhat disappointed · 조금 아쉽다</span><span>Not really · 별로</span></div>
+<div class="q"><span class="en">"What's the main thing you'd miss?"</span><span class="ko">뭐가 제일 아쉬울 것 같아요?</span></div>
+<div class="chips">
+<span class="chip">Knowing what to do every day<small>매일 할 일을 정해 주는 것 · 구조</small></span>
+<span class="chip">The trainer's feedback on my videos<small>내 영상에 대한 트레이너 피드백 · 평가</small></span>
+<span class="chip">Talking with Seoul<small>서울이와의 대화 · 코치 관계</small></span>
+<span class="chip">The lesson videos<small>수업 영상 · 콘텐츠</small></span>
+<span class="chip">Seeing my progress / streak<small>진도·연속 기록을 보는 것 · 진척</small></span>
+<span class="chip none">Nothing in particular<small>특별히 없다</small></span>
+<span class="chip other">Something else (type it)<small>다른 것(직접 쓰기)</small></span>
+</div>
+
+<h2>T6 · 위험·휴면에서 돌아온 첫 행동 직후</h2>
+<p class="when">복귀자 · 2주 예상 17명</p>
+<div class="q"><span class="en">"Good to see you. What made today the day you came back?"</span><span class="ko">다시 봐서 반가워요. 오늘 다시 오게 된 계기가 뭐였어요?</span></div>
+<div class="chips">
+<span class="chip">Your message this morning<small>오늘 아침 서울이 메시지 · 선톡</small></span>
+<span class="chip">My trainer's result came in<small>트레이너 결과가 와서 · 보상</small></span>
+<span class="chip">I finally had time<small>드디어 시간이 나서 · 시간</small></span>
+<span class="chip">I felt I should get back to it<small>다시 해야겠다는 마음이 들어서 · 자발</small></span>
+<span class="chip">Someone around me (friend / family)<small>주변 사람(친구·가족) · 사회</small></span>
+<span class="chip none">Not sure<small>잘 모르겠다</small></span>
+<span class="chip other">Something else (type it)<small>다른 것(직접 쓰기)</small></span>
+</div>
+
+<h2>T7 · 훈련일 2회 연속 결석 다음 아침, 선톡 안에</h2>
+<p class="when">새로 위험 상태가 된 사람 · 예상 약 20명/주 · 답하지 않아도 그대로 넘어감</p>
+<div class="q"><span class="en">"Missed you the last two sessions. What got in the way?"</span><span class="ko">지난 두 번 못 봤네요. 뭐가 가로막았어요?</span></div>
+<div class="chips">
+<span class="chip">Busy (work / school / life)<small>바빴다(일·학교·일상) · 시간</small></span>
+<span class="chip">Wasn't feeling well or got hurt<small>몸이 안 좋았거나 다쳤다 · 몸 (19세 미만: "Didn't feel up to it")</small></span>
+<span class="chip">Didn't get a plan / didn't know what to do<small>플랜이 안 왔거나 뭘 할지 몰랐다 · 시작·이해</small></span>
+<span class="chip">The app or video didn't work<small>앱·영상이 안 됐다 · 기기</small></span>
+<span class="chip">It felt too hard or not fun<small>너무 어렵거나 재미없었다 · 동기</small></span>
+<span class="chip none">Just forgot<small>그냥 잊었다</small></span>
+<span class="chip other">Something else (type it)<small>다른 것(직접 쓰기)</small></span>
+</div>
+
+<h2>T8 · 30일 설문(기존 D30 카드)에 1문항 추가</h2>
+<p class="when">30일 도달 · 2주 예상 5명</p>
+<div class="q"><span class="en">"Over the month, which single moment made you keep going?"</span><span class="ko">한 달 동안 계속하게 만든 순간 하나만 꼽으면요?</span></div>
+<p class="follow">선택지는 T2와 같은 7개. 되묻기 1회 · <b>"Tell me about that moment in one line."</b> 그 순간을 한 줄로 말해 줄래요?</p>
+
+<h2>답을 읽는 법</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>단계</th><th>어떻게</th></tr></thead>
+<tbody>
+<tr><td>코드</td><td>선택지 = 아하 후보 코드. 직접 쓴 답은 같은 코드로 다시 분류하고, 어디에도 안 들어가면 새 코드를 만듭니다.</td></tr>
+<tr><td>복귀와 맞추기</td><td>답마다 그 학습자의 "그 뒤 훈련일 3회 중 2회 복귀"를 붙여 코드별 복귀율을 냅니다. 5명 미만은 비율 없이 명단.</td></tr>
+<tr><td>판정</td><td>질문당 15건이 모이면 아하 후보와 제품 변경을 결정 요청으로 올립니다. 예상: T1·T3·T5·T7은 2주, T2·T4·T6은 3~4주.</td></tr>
+</tbody></table></div>
+
+<h2>요청</h2>
+<div class="ask">
+<label><input type="checkbox" id="opt-a"><span>8개 모두 채택 — 1차 T1·T2·T3·T4·T8, 2주 뒤 T5·T6·T7</span></label>
+<label><input type="checkbox" id="opt-b"><span>선택지 수정 뒤 채택 — 수정할 항목을 알려 주세요</span></label>
+<label><input type="checkbox" id="opt-c"><span>보류 — 사유를 알려 주세요</span></label>
+</div>
+<div class="foot">원본 <code>reports/decisions/2026-10-07-rule-aha-survey-proactive.md</code> · 조사 근거 <code>reports/adhoc/2026-10-07-aha-survey-research.md</code>. 학습자 개인 정보는 담지 않았습니다.</div>
+</div>
+</body>
+</html>
